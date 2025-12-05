@@ -18,7 +18,8 @@ body{
     height: 72px;   
     margin: auto;
     padding: 0 max(30px, calc((100% - 1250px) / 2));
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 .logo img {
@@ -119,6 +120,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .hero-overlay {
