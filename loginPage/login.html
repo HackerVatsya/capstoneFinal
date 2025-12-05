@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HarvestX</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;600&display=swap'>
 </head>
@@ -18,7 +18,7 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Categories</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="../aboutPage/about.html">About Us</a></li>
                 <li><a href="../contactPage/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -30,24 +30,37 @@
             </div>
             <div class="nav-icons">
                 <a id="cart-btn" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="../loginPage/login.html">Login</a>
+                <a href="#">Login</a>
             </div>
     </header>
+
     <main>
         <section>
-            <h1 class="title">About HarvestX</h1>
-    
-            <div class="text">
-                <p>Founded on the principles of quality and reliability, HarvestX has been serving the agricultural community
-                    for over 20 years. Our family-owned business understands the urgency of getting your machinery back in the
-                    field.</p>
-        
-                <p>We specialize in high-quality spare parts for a wide range of combine harvester machines. Our mission is to
-                    provide our valued customers with the parts they need, when they need them, with the convenience of our new
-                    online ordering system for in-store pickup.</p>
+            <div class="auth-card">
+                <h1 class="auth-title">Customer Account</h1>
+                <p class="auth-subtitle">Login to track your orders or create an account.</p>
+                
+                <div id="auth-error" class="error-msg"></div>
+                
+                <form id="login-form" class="auth-form">
+                    <input type="email" name="email" id="email" placeholder="Email" required class="form-input">
+                    <input type="password" name="password" id="password" placeholder="Password" required class="form-input">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                
+                <div class="divider">or</div>
+                
+                <form id="signup-form" class="auth-form">
+                    <input type="text" id="signup-name" placeholder="Full Name" required class="form-input">
+                    <input type="tel" id="signup-phone" placeholder="Phone Number" required class="form-input">
+                    <input type="email" id="signup-email" placeholder="Email" required class="form-input">
+                    <input type="password" id="signup-password" placeholder="Password (min. 6 characters)" required class="form-input">
+                    <button type="submit" class="btn btn-secondary">Create Account</button>
+                </form>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
 
