@@ -1,0 +1,28 @@
+section {
+    padding: 60px 20px;
+    width: 100%;
+}
+
+.title {
+    color: #1a4d2e;      
+    font-size: 36px;   
+    font-weight: 700;  
+    text-align: center; 
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;;
+}
+
+.text {
+    max-width: 750px;    
+    margin: 0 auto;     
+    text-align: center; 
+    font-size: 18px;    
+    color: #374151; 
+    line-height: 1.6; 
+    font-family: "Inter", sans-serif;
+}
+
+/* Spacing between the paragraphs */
+.about-text p {
+    margin-bottom: 20px;
+}
