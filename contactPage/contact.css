@@ -1,0 +1,67 @@
+section {
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #1a4d2e;     
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-card {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    max-width: 550px;    
+    padding: 40px;
+    border-radius: 12px;  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    text-align: center;
+}
+
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #374151;
+}
+
+
+.contact-details p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+
+.icon-gold {
+    color: #d4a017;       
+    margin-right: 10px;
+}
+
+
+.store-hours {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #e5e7eb; 
+}
+
+.store-hours h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.store-hours p {
+    color: #6b7280;
+    margin: 5px 0;
+    font-size: 16px;
+}
