@@ -64,27 +64,48 @@ body{
     color: #1a4d2e; 
 }
 
+@media (max-width: 950px) {
+    
+    .nav-bar ul {
+        gap: 10px; 
+    }
+    
+    .nav-bar ul li a {
+        font-size: 14px;
+        padding: 6px 2px;
+    }
+    
+    .header {
+        padding: 0 15px; 
+    }
+}
+
 @media (max-width: 768px) {
     
     .hamburger {
         display: block; 
     }
 
+    .nav-bar {
+      order: 5;
+      flex: 0 0 auto;
+      margin-left: 15px;
+    }
+
     .nav-bar ul {
-        display: none; /* Hidden by default on mobile */
+        display: none; 
         flex-direction: column;
         position: absolute;
-        top: 72px;      /* Pushes it below the header height */
+        top: 72px;   
         left: 0;
         width: 100%;
         background-color: white;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         padding: 20px 0;
-        gap: 0; /* Remove horizontal gap */
+        gap: 0; 
         z-index: 100;
     }
 
-    /* Style individual links for mobile */
     .nav-bar ul li {
         text-align: center;
         width: 100%;
@@ -97,18 +118,19 @@ body{
         border-bottom: 1px solid #f0f0f0;
     }
 
-    /* The Class JavaScript will add to show the menu */
     .nav-bar ul.active {
-        display: flex; /* Turns it back on */
+        display: flex; 
     }
 }
 .search-bar {
   display: flex;
   align-items: center;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 120px;
+  flex: 1;
   position: relative;
   margin: 0 12px;
-  flex-shrink: 0;
 }
 .search-bar input {
   width: 100%;
