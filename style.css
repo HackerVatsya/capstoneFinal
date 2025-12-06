@@ -122,6 +122,43 @@ body{
         display: flex; 
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        flex-wrap: wrap;       
+        height: auto;       
+        padding: 15px;       
+        gap: 0;             
+    }
+    .logo {
+        order: 1;
+        margin-right: auto;    
+        height: 40px;      
+        margin-bottom: 10px;
+    }
+
+
+    .nav-icons {
+        order: 2;
+        margin-right: 15px;  
+    }
+
+    .nav-bar {
+        order: 3;
+        margin: 0;            
+        display: block;        
+    }
+
+    .search-bar {
+        order: 4;              
+        width: 100%;         
+        max-width: 100%;      
+        margin-top: 15px;     
+    }
+    .nav-bar ul {
+        top: 100%;         
+    }
+}
 .search-bar {
   display: flex;
   align-items: center;
